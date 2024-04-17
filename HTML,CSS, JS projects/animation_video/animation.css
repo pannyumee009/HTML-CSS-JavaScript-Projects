@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #6666bccb;
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.all .container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.container .loading{
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  animation: load  ease infinite;
+  /*animation-name: example infinte;*/
+  animation-duration: 4s;
+  /*animation-delay: 0.5s;*/
+}
+
+.container .loading .one{
+  
+  animation-delay: 0.3s;
+}
+
+.container .loading .two{
+  animation-delay: 0.4s;
+}
+
+.container .loading .three{
+  animation-delay: 0.5s;
+}
+
+.container .loading .four{
+  animation-delay: 0.6s;
+}
+
+@keyframes load{
+  0%{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+  }25%{
+    background-color: yellow;
+  }
+  50%{
+    width: 20px;
+    height: 20px;
+    background-color:blue;
+  }
+  75%{
+    background-color:green;
+  }
+  100%{
+    background-color:red;
+  }
+}
+
